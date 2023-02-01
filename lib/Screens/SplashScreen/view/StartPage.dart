@@ -12,11 +12,11 @@ class StartPage extends StatefulWidget {
 }
 
 class _StartPageState extends State<StartPage> {
-  @override
-  void initState() {
-    super.initState();
-    Provider.of<HomeProvider>(context,listen: false).ReadStartButton(context);
-  }
+  // @override
+  // void initState() {
+  //   super.initState();
+  //   Provider.of<HomeProvider>(context,listen: false).ReadStartButton(context);
+  // }
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -30,11 +30,11 @@ class _StartPageState extends State<StartPage> {
             Align(
               alignment: Alignment.center,
               child: Padding(
-                padding: EdgeInsets.only(top: 50.h),
+                padding: EdgeInsets.only(top: 65.h,left: 1.5.w),
                 child: Text(
                   "From",
                   style: TextStyle(
-                      fontSize: 15.sp,
+                      fontSize: 11.sp,
                       color: Colors.grey
                   ),
                 ),
@@ -43,7 +43,7 @@ class _StartPageState extends State<StartPage> {
             Align(
               alignment: Alignment.center,
               child: Padding(
-                padding: EdgeInsets.only(top: 56.h),
+                padding: EdgeInsets.only(top: 70.h),
                 child: Text(
                   "Jayraj",
                   style: TextStyle(
@@ -52,6 +52,13 @@ class _StartPageState extends State<StartPage> {
                     fontWeight: FontWeight.w900
                   ),
                 ),
+              ),
+            ),
+            Align(
+              alignment: Alignment.center,
+              child: Padding(
+                padding: EdgeInsets.only(top: 85.h),
+                child: CircularProgressIndicator(color: Colors.lightBlueAccent,),
               ),
             ),
           ],
