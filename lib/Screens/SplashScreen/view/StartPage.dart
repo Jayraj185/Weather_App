@@ -12,11 +12,11 @@ class StartPage extends StatefulWidget {
 }
 
 class _StartPageState extends State<StartPage> {
-  // @override
-  // void initState() {
-  //   super.initState();
-  //   Provider.of<HomeProvider>(context,listen: false).ReadStartButton(context);
-  // }
+  @override
+  void initState() {
+    super.initState();
+    Provider.of<HomeProvider>(context,listen: false).ReadStartButton(context);
+  }
   @override
   Widget build(BuildContext context) {
     return SafeArea(
